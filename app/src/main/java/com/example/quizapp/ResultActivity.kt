@@ -28,6 +28,7 @@ class ResultActivity : AppCompatActivity() {
 
         btnFinish.setOnClickListener(){
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }

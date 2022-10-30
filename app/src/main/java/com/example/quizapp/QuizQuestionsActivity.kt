@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -23,6 +24,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
     private var ivImage: ImageView? = null
     private var progressBar: ProgressBar? = null
     private var tvProgress: TextView? = null
+    private var checkIfAnswerGiven: Boolean = true
 
     private var tvOptionOne: TextView? = null
     private var tvOptionTwo: TextView? = null
@@ -147,6 +149,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
 
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onClick(view: View?) {
         when (view?.id){ // checks what the id of view of - basically sees which textview is clicked
             R.id.tv_option_one -> {
