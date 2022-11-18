@@ -24,7 +24,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
     private var ivImage: ImageView? = null
     private var progressBar: ProgressBar? = null
     private var tvProgress: TextView? = null
-    private var checkIfAnswerGiven: Boolean = true
 
     private var tvOptionOne: TextView? = null
     private var tvOptionTwo: TextView? = null
